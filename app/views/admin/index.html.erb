@@ -1,0 +1,16 @@
+<h1>Admin#index</h1>
+<p>Find me in app/views/admin/index.html.erb</p>
+
+<h1> Users </h1>
+
+<%= link_to "All Users", :action => "index" %>
+|
+<%= link_to "Users awaiting approval", :action => "index", :approved => "false" %>
+
+<%table
+    - @users.each do |user|
+        %tr
+            <%td= user.email %>
+            <%td= user.approved %>
+            <%td= link_to "Edit", edit_user_path(user) %>
+

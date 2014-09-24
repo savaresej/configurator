@@ -1,0 +1,7 @@
+<p>Welcome <%= @email %>!</p>
+
+<p>Please confirm your account email through the link below:</p>
+
+<p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+
+<p>The administration will approve your account within 24hrs. If you have not received confirmation that your account is active within that period of time, please contact Joe Savarese (ext. 7154)</p>
