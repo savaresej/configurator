@@ -5,5 +5,5 @@ class ConfigpagesController < ApplicationController
 
   def intelpricelist
   end
-  
+
 end
